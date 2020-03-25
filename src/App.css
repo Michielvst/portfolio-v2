@@ -241,6 +241,14 @@ ul li::before {
   .Introduction p {
     padding-right: 0vw;
   }
+
+  .apps {
+    margin: 10px;
+  }
+
+  .Applications img {
+    width: 250px;
+  }
 }
 
 .Nav {
@@ -290,8 +298,21 @@ ul li::before {
   margin-bottom: 20px;
   margin-top: 20px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .resumeButton {
   margin-left: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .apps {
+    margin: 0px;
+    margin-top: 30px;
+  }
+
+  .Applications img {
+    width: 70vw;
+  }
 }
