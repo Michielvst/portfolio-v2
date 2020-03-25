@@ -1,26 +1,42 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Introduction from './components/Introduction';
+import About from './components/About';
+import NavbarTop from './components/NavbarTop';
+import Skills from './components/Skills';
+import Applications from './components/Applications';
+import Contact from './components/Contact';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends   React.Component {
+  aboutRef = React.createRef();
+
+  scrollWindow = e => {
+    const element = document.getElementById(e.currentTarget.name);
+    element.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  render() {
+    return (
+      <div className="App">
+        <NavbarTop scrollWindow={this.scrollWindow} />
+        <div id="introduction">
+          <Introduction scrollWindow={this.scrollWindow} />
+        </div>
+        <div id="about">
+          <About />
+        </div>
+        <div id="skills">
+          <Skills />
+        </div>
+        <div id="applications">
+          <Applications />
+        </div>
+        <div id="contact">
+          <Contact />
+        </div>
+      </div>
+    );
+  }
 }
 
 export default App;
