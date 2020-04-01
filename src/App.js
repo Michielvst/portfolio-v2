@@ -6,7 +6,6 @@ import NavbarTop from "./components/NavbarTop";
 import Skills from "./components/Skills";
 import Applications from "./components/Applications";
 import Contact from "./components/Contact";
-import FadeInSection from "./components/FadeInSection";
 
 class App extends React.Component {
   aboutRef = React.createRef();
@@ -33,9 +32,7 @@ class App extends React.Component {
           <Applications />
         </div>
         <div id="contact">
-          <FadeInSection>
-            <Contact />
-          </FadeInSection>
+          <Contact />
         </div>
       </div>
     );
