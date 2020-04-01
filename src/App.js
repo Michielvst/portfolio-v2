@@ -1,18 +1,19 @@
-import React from 'react';
-import './App.css';
-import Introduction from './components/Introduction';
-import About from './components/About';
-import NavbarTop from './components/NavbarTop';
-import Skills from './components/Skills';
-import Applications from './components/Applications';
-import Contact from './components/Contact';
+import React from "react";
+import "./App.css";
+import Introduction from "./components/Introduction";
+import About from "./components/About";
+import NavbarTop from "./components/NavbarTop";
+import Skills from "./components/Skills";
+import Applications from "./components/Applications";
+import Contact from "./components/Contact";
+import FadeInSection from "./components/FadeInSection";
 
-class App extends   React.Component {
+class App extends React.Component {
   aboutRef = React.createRef();
 
   scrollWindow = e => {
     const element = document.getElementById(e.currentTarget.name);
-    element.scrollIntoView({ behavior: 'smooth' });
+    element.scrollIntoView({ behavior: "smooth" });
   };
 
   render() {
@@ -32,7 +33,9 @@ class App extends   React.Component {
           <Applications />
         </div>
         <div id="contact">
-          <Contact />
+          <FadeInSection>
+            <Contact />
+          </FadeInSection>
         </div>
       </div>
     );
