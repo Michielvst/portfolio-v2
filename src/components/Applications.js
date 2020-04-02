@@ -3,6 +3,7 @@ import catchofthe from "../catchoftheday.png";
 import currency from "../currency-convertor.png";
 import hearthstone from "../hearthstone-card-app.png";
 import memory from "../memory-img.png";
+import chomp from "../chomp.png";
 import { Container, Row, Col } from "react-bootstrap";
 import FadeInSection from "./FadeInSection";
 
@@ -63,8 +64,16 @@ export default function Applications() {
             <Col lg>
               <div className="apps">
                 <p>Memory Game</p>
-                <a href="ttps://memory-app.netlify.com" target="#blank">
+                <a href="https://memory-app.netlify.com" target="#blank">
                   <img src={memory} alt="memory" className="appImage"></img>
+                </a>
+              </div>
+            </Col>
+            <Col lg>
+              <div className="apps">
+                <p>Chomp Game</p>
+                <a href="https://chompgame.netlify.com/" target="#blank">
+                  <img src={chomp} alt="chomp" className="appImage"></img>
                 </a>
               </div>
             </Col>
