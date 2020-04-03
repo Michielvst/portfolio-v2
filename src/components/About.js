@@ -2,8 +2,9 @@ import React from "react";
 import { Image, Container, Row, Col } from "react-bootstrap";
 import foto from "../profielfoto2.png";
 import FadeInSection from "./FadeInSection";
+import Arrow from "./Arrow";
 
-export default function Introduction() {
+export default function Introduction(props) {
   return (
     <div className="About">
       <Container>

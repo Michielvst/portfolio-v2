@@ -49,6 +49,11 @@
   margin-right: 40vw;
 }
 
+.introduction {
+  width: 100vw;
+  height: 100vh;
+}
+
 .About {
   padding-top: 30vh;
   min-height: 100vh;
@@ -80,6 +85,9 @@
 }
 
 @media only screen and (max-width: 1000px) {
+  .About {
+    padding-top: 10vh;
+  }
   .About h2 {
     margin-left: 0vw;
   }
@@ -90,6 +98,7 @@
 
   .foto {
     margin-left: 0vw;
+    width: 250px;
   }
 }
 
@@ -358,4 +367,102 @@ ul li::before {
   opacity: 1;
   transform: none;
   visibility: visible;
+}
+
+.fullScreen1 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.fullScreen {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.arrow {
+  cursor: pointer;
+  height: 120px;
+  left: 50%;
+  position: relative;
+  bottom: 80px;
+  transform: translateX(-50%) translateY(-50%) rotate(90deg);
+  transition: transform 0.1s;
+  width: 80px;
+}
+.coooolllloooors {
+  color: #eaeaea;
+  color: #08d9d6;
+  color: #ff2e63;
+}
+.arrow-top,
+.arrow-bottom {
+  background-color: #eaeaea;
+  height: 4px;
+  left: -5px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+.arrow-top:after,
+.arrow-bottom:after {
+  background-color: #ff2e63;
+  content: "";
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transition: all 0.15s;
+}
+.arrow-top {
+  transform: rotate(45deg);
+  transform-origin: bottom right;
+}
+.arrow-top:after {
+  left: 100%;
+  right: 0;
+  transition-delay: 0s;
+}
+.arrow-bottom {
+  transform: rotate(-45deg);
+  transform-origin: top right;
+}
+.arrow-bottom:after {
+  left: 0;
+  right: 100%;
+  transition-delay: 0.15s;
+}
+.arrow:hover .arrow-top:after {
+  left: 0;
+  transition-delay: 0.15s;
+}
+.arrow:hover .arrow-bottom:after {
+  right: 0;
+  transition-delay: 0s;
+}
+.arrow:active {
+  transform: translateX(-50%) translateY(-50%) scale(0.9) rotate(90deg);
+}
+
+.appArrow {
+  cursor: pointer;
+  height: 120px;
+  left: 50%;
+  position: relative;
+  bottom: -50px;
+  transform: translateX(-50%) translateY(-50%) rotate(90deg);
+  transition: transform 0.1s;
+  width: 80px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .aboutArrow {
+    left: 50%;
+    bottom: -65px;
+    transform: translateX(-50%) translateY(-50%) rotate(90deg);
+    transition: transform 0.1s;
+    width: 80px;
+  }
 }

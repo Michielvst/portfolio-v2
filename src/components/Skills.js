@@ -1,8 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import FadeInSection from "./FadeInSection";
+import Arrow from "./Arrow";
 
-export default function Skills() {
+export default function Skills(props) {
   return (
     <div className="Skills">
       <FadeInSection>

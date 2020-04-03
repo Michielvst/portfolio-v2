@@ -1,10 +1,6 @@
 import React, { useEffect } from "react";
 import { Button } from "react-bootstrap";
-import foto from "../profielfoto2.png";
-import FadeInSection from "./FadeInSection";
-
-const wait = (amount = 0) =>
-  new Promise(resolve => setTimeout(resolve, amount));
+import Arrow from "./Arrow";
 
 export default function Introduction(props) {
   const introRef = React.createRef();
@@ -13,6 +9,8 @@ export default function Introduction(props) {
   const buttonRef = React.createRef();
 
   useEffect(async () => {
+    const wait = (amount = 0) =>
+      new Promise(resolve => setTimeout(resolve, amount));
     introRef.current.classList.add("is-visible");
     await wait(1000);
     nameRef.current.classList.add("is-visible");
