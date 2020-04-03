@@ -84,38 +84,6 @@
   margin-top: 4vh;
 }
 
-@media only screen and (max-width: 1000px) {
-  .About {
-    padding-top: 10vh;
-  }
-  .About h2 {
-    margin-left: 0vw;
-  }
-
-  .About p {
-    margin-left: 0vw;
-  }
-
-  .foto {
-    margin-left: 0vw;
-    width: 250px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .About h2 {
-    margin-left: 0vw;
-  }
-
-  .About p {
-    margin-left: 0vw;
-  }
-
-  .foto {
-    margin-left: 0vw;
-  }
-}
-
 .Skills {
   padding-top: 30vh;
   min-height: 100vh;
@@ -464,5 +432,45 @@ ul li::before {
     transform: translateX(-50%) translateY(-50%) rotate(90deg);
     transition: transform 0.1s;
     width: 80px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .About {
+    padding-top: 10vh;
+  }
+  .About h2 {
+    margin-left: 0vw;
+  }
+
+  .About p {
+    margin-left: 0vw;
+  }
+
+  .foto {
+    margin-left: 0vw;
+    width: 250px;
+  }
+
+  .Skills {
+    padding-top: 10vh;
+  }
+
+  .About {
+    height: calc(100vh + 40px);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .About h2 {
+    margin-left: 0vw;
+  }
+
+  .About p {
+    margin-left: 0vw;
+  }
+
+  .foto {
+    margin-left: 0vw;
   }
 }
