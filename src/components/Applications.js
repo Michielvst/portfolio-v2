@@ -4,6 +4,7 @@ import currency from "../currency-convertor.png";
 import hearthstone from "../hearthstone-card-app.png";
 import memory from "../memory-img.png";
 import chomp from "../chomp.png";
+import kleurenwiezen from "../kleurenwiezenapp.png";
 import { Container, Row, Col } from "react-bootstrap";
 import FadeInSection from "./FadeInSection";
 import Arrow from "./Arrow";
@@ -15,6 +16,32 @@ export default function Applications(props) {
         <FadeInSection>
           <h2>Applications</h2>
           <Container>
+            <Row>
+              <Col lg>
+                <div className="apps">
+                  <p>Chomp Game</p>
+                  <a href="https://chompgame.netlify.com/" target="#blank">
+                    <img src={chomp} alt="chomp" className="appImage"></img>
+                  </a>
+                </div>
+              </Col>
+
+              <Col lg>
+                <div className="apps">
+                  <p>Kleurenwiezen Scorecalculator</p>
+                  <a
+                    href="https://kleurenwiezencalc.netlify.com/"
+                    target="#blank"
+                  >
+                    <img
+                      src={kleurenwiezen}
+                      alt="kleurenwiezen"
+                      className="appImage"
+                    ></img>
+                  </a>
+                </div>
+              </Col>
+            </Row>
             <Row>
               <Col lg>
                 <div className="apps">
@@ -31,9 +58,19 @@ export default function Applications(props) {
                   </a>
                 </div>
               </Col>
+
               <Col lg>
                 <div className="apps">
-                  <p>Simple currency convertor</p>
+                  <p>Memory Game</p>
+                  <a href="https://memory-app.netlify.com" target="#blank">
+                    <img src={memory} alt="memory" className="appImage"></img>
+                  </a>
+                </div>
+              </Col>
+
+              <Col lg>
+                <div className="apps">
+                  <p>Simple Currency Convertor</p>
                   <a
                     href="https://michielvs-currency-converter.netlify.com"
                     target="#blank"
@@ -46,8 +83,7 @@ export default function Applications(props) {
                   </a>
                 </div>
               </Col>
-            </Row>
-            <Row>
+
               <Col lg>
                 <div className="apps">
                   <p>Hearthstone Card Sorter</p>
@@ -60,22 +96,6 @@ export default function Applications(props) {
                       alt="Hearthstone afbeelding"
                       className="appImage"
                     ></img>
-                  </a>
-                </div>
-              </Col>
-              <Col lg>
-                <div className="apps">
-                  <p>Memory Game</p>
-                  <a href="https://memory-app.netlify.com" target="#blank">
-                    <img src={memory} alt="memory" className="appImage"></img>
-                  </a>
-                </div>
-              </Col>
-              <Col lg>
-                <div className="apps">
-                  <p>Chomp Game</p>
-                  <a href="https://chompgame.netlify.com/" target="#blank">
-                    <img src={chomp} alt="chomp" className="appImage"></img>
                   </a>
                 </div>
               </Col>
