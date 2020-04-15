@@ -14,7 +14,7 @@ export default function Contact() {
         </p>
         <ul>
           <li>Schoolstraat 3 9255 Buggenhout</li>
-          <li>+32 476 01 07</li>
+          <li>+32 476 01 07 10</li>
           <li>michiel--vs@outlook.com</li>
         </ul>
         <div className="imgLinkGit">
