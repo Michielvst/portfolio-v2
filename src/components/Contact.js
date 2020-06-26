@@ -37,7 +37,7 @@ export default function Contact() {
               name="contact"
               className="button resumeButton"
             >
-              Resume
+              Resumes
             </Button>{" "}
           </a>
         </div>
