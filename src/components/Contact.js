@@ -31,10 +31,7 @@ export default function Contact() {
           <a href="https://github.com/Michielvst" target="_blank">
             <img src={githubimg} alt="github" className="linkimg"></img>
           </a>
-          <a
-            href="https://www.docdroid.net/G08lpwy/resume-michielvs.pdf"
-            target="_blank"
-          >
+          <a href="https://docdro.id/gZwD9z4" target="_blank">
             <Button
               variant="outline-primary"
               name="contact"
